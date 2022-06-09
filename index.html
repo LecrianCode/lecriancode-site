@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <link rel="icon" href="" type="x-icon"> -->
+    <title>Lecrian Code</title>
+  </head>
+  <body>
+    <div>
+      <div id="accountmenu">
+        <a class="cls" onclick="closeMnu()">&times;</a>
+        <br>
+        <a id="dashboard">Dashboard</a><br><br>
+        <a id="newcode">New Code</a><br><br>
+        <a id="notify" onclick="notify()">Notifications</a>
+      </div>
+      <header>
+        <nav>
+          <a href="" class="title"> Lecrian Code </a>
+          <a href="features.html">Bilgi</a>
+          <button id="account" onclick="">Sunucumuz</button>
+        </nav>
+        <br><br>
+        <p class="hlarge">
+          Lecrian Code
+        </p>
+        <p class="hsmall">Türkiye'nin en iyi kod sunucularından biri.</p>
+      </header>
+      <div class="container">
+      
+      
+      </div>
+    </div>
+    <div id="snackbar1">You have <a>0</a> unread notifications.</div>
+    <script>
+function openMnu() {
+  document.getElementById("accountmenu").style.width = "250px";
+}
+
+function closeMnu() {
+  document.getElementById("accountmenu").style.width = "0";
+}
+    </script>
+    <script>
+    function notify() {
+        var x = document.getElementById("snackbar1");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+#accountmenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #3754C8, #4B67D7, #647DE1);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+
+#accountmenu .cls {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+}
+
+#accountmenu .cls:hover {
+  cursor: grab;
+  color: #f1f1f1;
+}
+
+#accountmenu a {
+  color: #C7C9D8;
+  text-decoration: none;
+  transition: 0.19998s;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+#accountmenu a:hover {
+  cursor: grab;
+  color: #E8EAF6;
+}
+
+header {
+  background: linear-gradient(to left, #3754C8, #4B67D7, #647DE1);
+  padding: 60px;
+  height: 200px;
+  color: #fff;
+}
+
+header nav {
+  padding: 10px;
+  background-color: inherit;
+}
+
+header nav a, header nav button {
+  padding: 5px;
+  color: #D2D5E8;
+  transition: 0.3s;
+  margin-left: 20px;
+  font-size: 100%;
+  text-decoration: none;
+  background-color: inherit;
+  border: none;
+}
+
+header nav a:hover, header nav button:hover {
+  color: #fff;
+  cursor: grab;
+}
+
+header nav .title {
+  color: #fff;
+  padding: 7px;
+  font-size: 130%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 0px;
+}
+
+header nav .title:hover {
+  color: #fff;
+}
+
+header nav #account {
+  float: right;
+  margin-left: 0px;
+  /* Side Menu */
+}
+
+header p {
+  text-align: center;
+  font-size: 100%;
+}
+
+header .hlarge {
+  font-size: 200%;
+}
+
+header .ftbg {
+  background: #797979;
+}
+
+header .ft {
+  background-color: rgba(1.5, 0, 1, 0.5);
+  color: #fff;
+  padding: 10px;
+  width: 150px;
+  height: 99px;
+  text-align: center;
+  border-radius: 4px;
+  transition: 0.3s;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+header .ft:hover {
+  margin-top: -20px;
+}
+
+header .fcu {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+}
+
+button:focus {
+  outline: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.container {
+  padding: 50px;
+  font-size: 100%;
+}
+
+#snackbar1 {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #1A1A1A;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar1 a {
+  color: #4B67D7;
+  font-weight: bold;
+}
+
+#snackbar1.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
